@@ -1,0 +1,95 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+.center {
+    align-items: center;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(150, 150, 255, 0.8)), url("/img/hero_bg.jpg");
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 48px 120px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+header a {
+    color: inherit;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 0 20px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons li {
+    padding: 0 5px;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding: 15px 48px;
+    border-radius: 80px;
+    border: none;
+    align-self: flex-start;
+}
+
+.banner-section{
+    background-color: #203E8A;
+    padding: 64px 0;
+}
+
+.works-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+
+.wrapper-works-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-works-icons:hover {
+    cursor: pointer;
+    transition: ease 0.3s;
+    transform: scale(1.1);
+}
