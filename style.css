@@ -19,7 +19,7 @@ h1 {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(150, 150, 255, 0.8)), url("/img/hero_bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(150, 150, 255, 0.8)), url("img/hero_bg.jpg");
     height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,6 +36,11 @@ header {
 
 header a {
     color: inherit;
+}
+
+header a:hover {
+    color: #203E8A;
+    transition: ease 0.3s;
 }
 
 #navbar {
@@ -70,6 +75,13 @@ button {
     align-self: flex-start;
 }
 
+button:hover {
+    cursor: pointer;
+    transition: ease 0.3s;
+    color: white;
+    background-color: #203E8A;
+}
+
 .banner-section{
     background-color: #203E8A;
     padding: 64px 0;
@@ -86,10 +98,35 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 50px;
+    border: 1px solid #203E8A;
+    border-radius: 10px;
 }
 
 .wrapper-works-icons:hover {
     cursor: pointer;
     transition: ease 0.3s;
     transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+}
+
+.projects-section {
+    background-color: #242526;
+    padding: 64px 120px;
+}
+
+.wrapper-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-projects img {
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-description {
+    padding: 56px 0px;
 }
