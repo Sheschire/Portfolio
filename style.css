@@ -107,7 +107,7 @@ button:hover {
     cursor: pointer;
     transition: ease 0.3s;
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
 .projects-section {
@@ -118,15 +118,47 @@ button:hover {
 .wrapper-projects {
     display: flex;
     justify-content: space-between;
+    padding-top: 24px; 
 }
 
 .wrapper-projects img {
     max-width: 30%;
     max-height: 30%;
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
+.wrapper-projects:hover {
+    transition: ease 0.2s;
+    cursor: pointer;
+    transform: translate(0.3cm);
+}
+
+.container-projects div:first-child{
+    padding-top: 0px;
+}
+
 .project-description {
-    padding: 56px 0px;
+    margin: 56px 0px 56px 48px;
+}
+
+.contact-section {
+    padding: 64px 120px;
+    border: 1px solid red;
+    background-color: #242526;
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-form input, textarea{
+    display: block;
+    width: 100%;
+    background-color: #242526;
+    padding: 16px 8px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    color: white;
 }
